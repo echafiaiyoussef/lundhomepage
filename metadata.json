@@ -1,0 +1,10 @@
+{
+  "name": "منصة إدارة المغاسل المتعددة",
+  "description": "منصة سحابية متكاملة لإدارة الفروع والمغاسل المتعددة، الكاشير الذكي، إشعارات الواتساب، والتقارير المالية والمخزون.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
