@@ -165,7 +165,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </div>
             <div>
               <h1 className="text-lg sm:text-xl font-black text-indigo-950 leading-tight flex items-center gap-1.5">
-                منصة إدارة المغاسل
+                منصة غسيل كلاود
                 <Sparkles className="w-4 h-4 text-amber-500 fill-amber-400 shrink-0" />
               </h1>
               <p className="text-[10px] sm:text-[11px] font-bold text-slate-500">النظام السحابي للكاشير والفواتير</p>
@@ -860,7 +860,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
           <div className="text-center space-y-4 mb-12">
             <span className="px-4 py-1.5 bg-amber-400/20 text-amber-300 border border-amber-400/30 text-xs font-black rounded-full inline-flex items-center gap-1.5">
               <Crown size={15} />
-              باقة اشتراك منصة المغاسل الشاملة
+              باقة اشتراك منصة غسيل كلاود
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-white">
               اشتراك واحد شامـل لكافة المميزات
