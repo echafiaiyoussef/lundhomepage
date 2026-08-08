@@ -579,7 +579,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({
                 <div className="bg-slate-900 px-4 py-2.5 rounded-t-[1.5rem] border-b border-white/10 flex items-center justify-between text-[11px] font-bold text-slate-400">
                   <span className="flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                    شاشة كاشير جديد — مغسلة نظافة وعود
+                    شاشة كاشير جديد — منصة غسيل كلاود
                   </span>
                   <span className="text-amber-300 font-mono">LAUNDRY PRO V5.8</span>
                 </div>

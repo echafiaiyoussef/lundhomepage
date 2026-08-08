@@ -1140,7 +1140,7 @@ const App: React.FC = () => {
           role: (metadata?.role || 'admin') as UserRole,
           full_name: metadata?.full_name || fallbackEmail.split('@')[0] || 'مستخدم تجريبي',
           laundry_id: ensureUUID(metadata?.laundry_id || userId),
-          laundry_name: metadata?.laundry_name || 'مغسلة نظافة وعود السحابية',
+          laundry_name: metadata?.laundry_name || 'منصة غسيل كلاود',
           saas_plan: (metadata?.saas_plan || 'gold') as any,
           saas_expiry: metadata?.saas_expiry || new Date(Date.now() + 365*24*60*60*1000).toISOString(),
           saas_status: metadata?.saas_status || 'active',
@@ -1194,7 +1194,7 @@ const App: React.FC = () => {
         role: 'admin',
         full_name: fallbackEmail.split('@')[0] || 'مستخدم تجريبي',
         laundry_id: ensureUUID(userId),
-        laundry_name: 'مغسلة نظافة وعود السحابية',
+        laundry_name: 'منصة غسيل كلاود',
         saas_plan: 'gold',
         saas_expiry: new Date(Date.now() + 365*24*60*60*1000).toISOString(),
         saas_status: 'active',
@@ -1219,7 +1219,7 @@ const App: React.FC = () => {
         setLaundries(data.value);
       } else {
         const defaultLaundries = [
-          { id: ensureUUID(userProfile?.laundry_id || 'laund-unknown'), name: userProfile?.laundry_name || 'مغسلة نظافة وعود السحابية' }
+          { id: ensureUUID(userProfile?.laundry_id || 'laund-unknown'), name: userProfile?.laundry_name || 'منصة غسيل كلاود' }
         ];
         setLaundries(defaultLaundries);
         
@@ -1234,7 +1234,7 @@ const App: React.FC = () => {
     } catch (e) {
       console.error("Failed to fetch laundries from settings:", e);
       setLaundries([
-        { id: ensureUUID(userProfile?.laundry_id || 'laund-unknown'), name: userProfile?.laundry_name || 'مغسلة نظافة وعود السحابية' }
+        { id: ensureUUID(userProfile?.laundry_id || 'laund-unknown'), name: userProfile?.laundry_name || 'منصة غسيل كلاود' }
       ]);
     }
   };
@@ -4550,7 +4550,7 @@ const App: React.FC = () => {
       <aside className="hidden md:flex flex-col w-24 xl:w-64 bg-white border-l p-4 py-6 sticky top-0 h-screen no-print transition-all shrink-0 overflow-hidden">
         <div className="flex items-center justify-center xl:justify-start gap-3 mb-8 px-2 shrink-0">
           <div className="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center text-white shadow-lg shrink-0"><ShoppingCart size={24} /></div>
-          <div className="hidden xl:block"><h1 className="text-base font-black leading-tight text-slate-800">مغسلة نظافة وعود</h1><p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Laundry Pro v5.8</p></div>
+          <div className="hidden xl:block"><h1 className="text-base font-black leading-tight text-slate-800">منصة غسيل كلاود</h1><p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Laundry Pro v5.8</p></div>
         </div>
         <nav className="space-y-1.5 overflow-y-auto flex-1 pr-1 pl-1 py-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
           {allowedNavItems.map(item => (
@@ -4578,7 +4578,7 @@ const App: React.FC = () => {
 
       {/* Mobile Navbar */}
       <nav className="md:hidden flex items-center justify-between px-6 py-4 bg-white border-b sticky top-0 z-[150] shadow-sm no-print">
-        <div className="flex items-center gap-3"><ShoppingCart size={20} className="text-indigo-600" /><h1 className="text-lg font-black">مغلسة نظافة وعود</h1></div>
+        <div className="flex items-center gap-3"><ShoppingCart size={20} className="text-indigo-600" /><h1 className="text-lg font-black">منصة غسيل كلاود</h1></div>
         <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="p-2 text-slate-500"><Menu size={24} /></button>
       </nav>
       {isMobileMenuOpen && (
@@ -6187,7 +6187,7 @@ const App: React.FC = () => {
           ) : (
             <div className="bg-white p-12 rounded-[2.5rem] border shadow-sm text-center animate-in fade-in">
               <ShieldCheck size={48} className="mx-auto text-indigo-600 mb-4 opacity-20" />
-              <h3 className="text-xl font-black text-slate-800 mb-2">مرحباً بك في نظام مغلسة نظافة وعود</h3>
+              <h3 className="text-xl font-black text-slate-800 mb-2">مرحباً بك في نظام منصة غسيل كلاود</h3>
               <p className="text-slate-500 font-medium">استخدم القائمة الجانبية للبدء في معالجة الطلبات.</p>
             </div>
           )
@@ -8648,7 +8648,7 @@ const App: React.FC = () => {
               </div>
 
               <div className="text-xs text-slate-500 font-bold leading-relaxed px-2">
-                شكراً لثقتكم واختياركم منصة مغسلة نظافة وعود السحابية! لإتمام تجديد الاشتراك السنوي أو الشهري يرجى التواصل مباشرة مع الدعم الفني للمنصة.
+                شكراً لثقتكم واختياركم منصة غسيل كلاود! لإتمام تجديد الاشتراك السنوي أو الشهري يرجى التواصل مباشرة مع الدعم الفني للمنصة.
               </div>
 
               <div className="grid grid-cols-1 gap-3 pt-4">

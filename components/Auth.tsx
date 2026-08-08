@@ -234,7 +234,7 @@ export const Auth: React.FC<AuthProps> = ({ onAuthSuccess, onBackToLanding }) =>
           <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-3xl flex items-center justify-center mx-auto mb-4 shadow-xl">
             <Building size={32} />
           </div>
-          <h1 className="text-2xl md:text-3xl font-black mb-2">مغسلة نظافة وعود السحابية</h1>
+          <h1 className="text-2xl md:text-3xl font-black mb-2">منصة غسيل كلاود</h1>
           <p className="text-indigo-100 font-medium text-sm md:text-base">منصة إدارة المغاسل المتعددة</p>
         </div>
 
